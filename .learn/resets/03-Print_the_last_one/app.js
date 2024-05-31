@@ -8,6 +8,3 @@ function generateRandomArray()
 let myStupidArray = generateRandomArray();
 
 // Your code here
-let index = myStupidArray.length - 1;
-let theLastOne = myStupidArray[index];
-console.log(`El último elemento es el ${theLastOne}. Y la cantidad de elementos son ${index+1}`);
