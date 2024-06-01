@@ -1,11 +1,18 @@
 let myArray = [ 1, 0, 0, 0, 1, 0, 0, 0, 1, 1 ];
 
-const ZerosToYahoos = (arr) => {
-    let return_array = [];
+const zerosToYahoos = (arr) => {
+    let returnArray = [];
+
     arr.forEach((item) => {
             // magic goes inside these brackets
+            if(item == 1) {
+                returnArray.push(item);
+            } else if(item == 0) {
+                returnArray.push('Yahoo');
+            }
     });
-    return return_array;
+
+    return returnArray;
 };
 
-console.log(ZerosToYahoos(myArray));
+console.log(zerosToYahoos(myArray));
